@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEBF43BD-220E-4AE9-A89A-7DD14760F003}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NumericText">
+      <HintPath>..\..\NumericText\NumericText\bin\Debug\NumericText.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SqlClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net451\System.Data.SqlClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDetails.Designer.cs">
+      <DependentUpon>UserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDetails.Designer.cs">
+      <DependentUpon>AdminDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppIt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppIt.Designer.cs">
+      <DependentUpon>AppIt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT4226.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT4226.Designer.cs">
+      <DependentUpon>IT4226.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT4216.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT4216.Designer.cs">
+      <DependentUpon>IT4216.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT4123.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT4123.Designer.cs">
+      <DependentUpon>IT4123.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT4113.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT4113.Designer.cs">
+      <DependentUpon>IT4113.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT3223.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT3223.Designer.cs">
+      <DependentUpon>IT3223.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT3213.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT3213.Designer.cs">
+      <DependentUpon>IT3213.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT3122.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT3122.Designer.cs">
+      <DependentUpon>IT3122.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT3113.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT3113.Designer.cs">
+      <DependentUpon>IT3113.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT2223.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT2223.Designer.cs">
+      <DependentUpon>IT2223.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT2212.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT2212.Designer.cs">
+      <DependentUpon>IT2212.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT2122.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT2122.Designer.cs">
+      <DependentUpon>IT2122.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT2114.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT2114.Designer.cs">
+      <DependentUpon>IT2114.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT1242.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT1242.Designer.cs">
+      <DependentUpon>IT1242.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT1232.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT1232.Designer.cs">
+      <DependentUpon>IT1232.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT1223.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT1223.Designer.cs">
+      <DependentUpon>IT1223.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT1214.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT1214.Designer.cs">
+      <DependentUpon>IT1214.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT1144.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT1144.Designer.cs">
+      <DependentUpon>IT1144.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT1134.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT1134.Designer.cs">
+      <DependentUpon>IT1134.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT1112.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT1112.Designer.cs">
+      <DependentUpon>IT1112.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IT1113.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT1113.Designer.cs">
+      <DependentUpon>IT1113.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItforYrSecsem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItforYrSecsem.Designer.cs">
+      <DependentUpon>ItforYrSecsem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItFourth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItFourth.Designer.cs">
+      <DependentUpon>ItFourth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItforYrFirsem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItforYrFirsem.Designer.cs">
+      <DependentUpon>ItforYrFirsem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItthirYrSecsem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItthirYrSecsem.Designer.cs">
+      <DependentUpon>ItthirYrSecsem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItthirYrFirsem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItthirYrFirsem.Designer.cs">
+      <DependentUpon>ItthirYrFirsem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItThird.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItThird.Designer.cs">
+      <DependentUpon>ItThird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItsecYrSecsem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItsecYrSecsem.Designer.cs">
+      <DependentUpon>ItsecYrSecsem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItsecYrFirsem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItsecYrFirsem.Designer.cs">
+      <DependentUpon>ItsecYrFirsem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItSec.Designer.cs">
+      <DependentUpon>ItSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItFir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItFir.Designer.cs">
+      <DependentUpon>ItFir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItfirYrSecsem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItfirYrSecsem.Designer.cs">
+      <DependentUpon>ItfirYrSecsem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItfirYrFirsem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItfirYrFirsem.Designer.cs">
+      <DependentUpon>ItfirYrFirsem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItYrSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItYrSel.Designer.cs">
+      <DependentUpon>ItYrSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginformUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginformUser.Designer.cs">
+      <DependentUpon>loginformUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginform.Designer.cs">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDetails.resx">
+      <DependentUpon>UserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDetails.resx">
+      <DependentUpon>AdminDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppIt.resx">
+      <DependentUpon>AppIt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT4226.resx">
+      <DependentUpon>IT4226.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT4216.resx">
+      <DependentUpon>IT4216.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT4123.resx">
+      <DependentUpon>IT4123.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT4113.resx">
+      <DependentUpon>IT4113.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT3223.resx">
+      <DependentUpon>IT3223.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT3213.resx">
+      <DependentUpon>IT3213.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT3122.resx">
+      <DependentUpon>IT3122.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT3113.resx">
+      <DependentUpon>IT3113.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT2223.resx">
+      <DependentUpon>IT2223.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT2212.resx">
+      <DependentUpon>IT2212.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT2122.resx">
+      <DependentUpon>IT2122.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT2114.resx">
+      <DependentUpon>IT2114.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT1242.resx">
+      <DependentUpon>IT1242.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT1232.resx">
+      <DependentUpon>IT1232.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT1223.resx">
+      <DependentUpon>IT1223.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT1214.resx">
+      <DependentUpon>IT1214.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT1144.resx">
+      <DependentUpon>IT1144.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT1134.resx">
+      <DependentUpon>IT1134.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT1112.resx">
+      <DependentUpon>IT1112.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT1113.resx">
+      <DependentUpon>IT1113.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItforYrSecsem.resx">
+      <DependentUpon>ItforYrSecsem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItFourth.resx">
+      <DependentUpon>ItFourth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItforYrFirsem.resx">
+      <DependentUpon>ItforYrFirsem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItthirYrSecsem.resx">
+      <DependentUpon>ItthirYrSecsem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItthirYrFirsem.resx">
+      <DependentUpon>ItthirYrFirsem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItThird.resx">
+      <DependentUpon>ItThird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItsecYrSecsem.resx">
+      <DependentUpon>ItsecYrSecsem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItsecYrFirsem.resx">
+      <DependentUpon>ItsecYrFirsem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItSec.resx">
+      <DependentUpon>ItSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItFir.resx">
+      <DependentUpon>ItFir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItfirYrSecsem.resx">
+      <DependentUpon>ItfirYrSecsem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItfirYrFirsem.resx">
+      <DependentUpon>ItfirYrFirsem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItYrSel.resx">
+      <DependentUpon>ItYrSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginformUser.resx">
+      <DependentUpon>loginformUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginform.resx">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginFrm_Background_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashBoardPicBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectPicBox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yrselec_BackGround_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garduate_hat_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sem_select_BackGround_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yrselec_BackGround_Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yrselec_BackGround_Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yrselec_BackGround_Image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yrselec_BackGround_Image4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm_Background_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select_login_image.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
